@@ -6,11 +6,13 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  nombre ='';
+  //nombre: string =''; es para solo cadenas
 
   constructor(public navCtrl: NavController) {
 
   }
   click() {
-    console.log('click');
+    console.log('Hola',this.nombre);
   }
 }
